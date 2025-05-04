@@ -1,2 +1,2 @@
 # BasicChatApp_Py
-Chat App.
+Chat App creada principalmente con python y algo de javascript.
