@@ -5,11 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Python Chat App</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
 </head>
 
 <body>
   <h1>Chat App</h1>
+  <div class="chat-container">
+    <div class="chat-header">Python Chat</div>
+    <div class="username-container">
+      <span id="current-username"></span>
+      <input type="text" id="username-input" value="Nuevo Nombre">
+      <button type="submit" id="update-username-button">Cambiar</button>
+    </div>
+    <div id="chat-messages" class="chat-messages"></div>
+    <div class="chat-input">
+      <input type="text" id="message-input" value="Escribe tu mensaje...">
+      <button type="submit" id="send-button">Enviar</button>
+    </div>
+
+  </div>
 </body>
 
 </html>
