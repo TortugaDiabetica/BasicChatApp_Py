@@ -26,8 +26,7 @@ def handle_connect():
     # Entregamos usuarios por defecto:
     username = f"User_{random.randint(1000, 9999)}"
     gender = random.choice(["boy", "girl"])
-    avatar_url = f"https://avatar.iran.liara.run/public/{
-        gender}?username={username}"
+    avatar_url = f"https://avatar.iran.liara.run/public/{gender}?username={username}"
 
     users[request.sid] = {  # type: ignore
         "username": username,
