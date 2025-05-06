@@ -1,5 +1,29 @@
+# Pyright configuracion personal:
 pyrightconfig.json
-pyrightconfig
+
+# Virtual environment:
 .venv
 venv
 env
+.env
+bin/
+.Python
+lib/
+lib64/
+pip-selfcheck.json
+venv*/
+
+# Node packages:
+node_modules/
+
+# Compiled python files:
+*.pyc
+
+# IDE files:
+.vscode/
+.idea/
+*.iml/
+*.pyc
+
+# Dependency directories
+/dist/
