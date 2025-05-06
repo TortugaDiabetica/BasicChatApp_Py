@@ -6,16 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Python Chat App</title>
   <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+
+  <!-- Cdn Socket.io para JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"
+    integrity="sha512-8BHxHDLsOHx+flIrQ0DrZcea7MkHqRU5GbTHmbdzMRnAaoCIkZ97PqZcXJkKZckMMhqfoeaJE+DNUVuyoQsO3Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-  <h1>Chat App</h1>
   <div class="chat-container">
     <div class="chat-header">Python Chat</div>
     <div class="username-container">
       <span id="current-username"></span>
       <input type="text" id="username-input" value="Nuevo Nombre">
-      <button type="submit" id="update-username-button">Cambiar</button>
+      <button type="submit" id="update-username-button">Cambiar Nombre</button>
     </div>
     <div id="chat-messages" class="chat-messages"></div>
     <div class="chat-input">
@@ -24,6 +28,7 @@
     </div>
 
   </div>
+  <script type="module" src="{{url_for('static', filename='socketio.js')}}"></script>
 </body>
 
 </html>
